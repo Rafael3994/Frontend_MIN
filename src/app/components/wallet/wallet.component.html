@@ -1,0 +1,83 @@
+<body class="containerWallet">
+    <div class="left">
+        <div class="addWallet">
+            <div class="wallet-wrap">
+                <div class="wallet-html">
+                    <div class="card-body text-center">
+                        <h4>CARTERA</h4>
+                        <hr>
+                        <div class="wallet-form">
+                            <form #wallet_form="ngForm" (ngSubmit)="addWallet(wallet_form)">
+                                <input type="hidden" name="_id" [ngModel]="walletService.form_wallet._id">
+                                <div class="group">
+                                    <label for="name" class="label">Nombre</label>
+                                    <input name="nombre" type="text" class="button" [ngModel]="walletService.form_wallet.nombre" />
+                                </div>
+                                <div class="group">
+                                    <label for="cripto" class="label">Criptomoneda</label>
+                                    <select name="moneda" type="text" class="button" [ngModel]="walletService.form_wallet.moneda">
+                                        <option value="bitcoin">Bitcoin</option>
+                                        <option value="ethereum">Ehereum</option>
+                                        <option value="binancecoin">Binance Coin</option>
+                                        <option value="ripple">Ripple</option>
+                                    </select>
+                                </div>
+                                <div class="group">
+                                    <label for="direccion" class="label">Dirección</label>
+                                    <input name="direccion" type="text" class="button" [ngModel]="walletService.form_wallet.direccion" />
+                                </div>
+                                <div class="group">
+                                    <label for="spot" class="label">Saldo</label>
+                                    <input name="saldo" type="text" class="button" [ngModel]="walletService.form_wallet.saldo" />
+                                </div>
+                                <button class="btnAddWallet">Añadir</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="walletsPort-wrap">
+            <h2>CARTERAS REGISTRADAS</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Moneda</th>
+                        <th>Direccion</th>
+                        <th>Saldo</th>
+                        <th>Valor Inicial</th>
+                        <th>Valor Actual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let wallet of walletService.wallet">
+                        <td>{{ wallet.nombre }}</td>
+                        <td>{{ wallet.moneda }}</td>
+                        <td>{{ wallet.direccion }}</td>
+                        <td>{{ wallet.saldo }}</td>
+                        <td>{{ wallet.valor_inicial }}</td>
+                        <td>{{ wallet.valor_actual }}</td>
+                        <td>
+                            <button class="btn" (click)="editMovimiento(movimiento)">
+                                <i class="material-icons">edit</i>
+                            </button>
+                            <button class="btn" (click)="deleteMovimiento(movimiento._id)">
+                                <i class="material-icons">delete</i>
+                            </button>
+                        </td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a href="#" class="btn-flotante"> 
+        <!-- <img src="../../../../assets/img/nuevo-logo.png" width="70" height="70" alt=""> -->
+    </a>
+</body>
+
+<app-footer></app-footer>
+

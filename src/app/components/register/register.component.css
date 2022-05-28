@@ -1,0 +1,90 @@
+
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.btnRegister{
+    text-transform:uppercase;
+    width:100%;
+	color:#efb810;;
+	display:block;
+    border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 3em;
+	letter-spacing: 2px;
+}
+.register-wrap{
+	width:100%;
+	margin:auto;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+	max-width:500px;
+	min-height:820px;
+	position:relative;
+	background-image:url("../../../assets/img/loginFondo.jpg");
+    background-repeat: no-repeat;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.register-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(149, 150, 138, 0.7);
+}
+
+.register-html .sign-in,
+.register-form .group .check{
+	display:none;
+}
+.register-html .tab,
+.register-form .group .label,
+.register-form .group .button{
+	text-transform:uppercase;
+}
+.register-html .tab{
+	display:inline-block;
+	color:black;
+	letter-spacing: 5px;
+}
+
+.register-form .group .label,
+.register-form .group .input,
+.register-form .group .button{
+	width:100%;
+	color:#efb810;
+	display:block;
+	font-weight: bold;
+	font-size: 12px;
+}
+.register-form .group .input,
+.register-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(149, 150, 138, 0.8);
+}
+
+.register-form .group .label{
+	color:black;
+	font-size:20px;
+    padding-top: 1.5em;
+    text-align: left;
+}
+
+hr{
+	height:3px;
+	margin:40px 0 30px 0;
+	background:rgba(233, 177, 8, 0.4);}
+
+.notRegistered{
+    margin-top: 1em;
+	text-align:right;
+    font-size: 14px;
+    font-weight: bold;
+}

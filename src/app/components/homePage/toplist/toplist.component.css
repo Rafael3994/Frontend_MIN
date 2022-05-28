@@ -1,0 +1,38 @@
+body{
+	background-image: linear-gradient(#373a3c, black);
+}
+div#crypto-container {
+    background:black;
+    width: 50%;
+    margin: 0 auto 2px auto;
+    padding: 2em;
+    border: 1px solid #efb810;
+  }
+  
+  span.left {
+    font-weight: bold;
+    font-size: 12px;
+    color: #efb810;
+    letter-spacing: 0.2em;
+  }
+  
+  span.right {
+    float:right;
+    font-size: 12px;
+    color: antiquewhite;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+  }
+
+  #mercado{
+    text-align: center;
+    font-size: 24px;
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    background-color: black;
+    margin-left: 25em;
+    margin-right: 25em;
+    color: #efb810;
+    border: 1px solid #efb810;
+  }

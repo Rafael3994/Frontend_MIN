@@ -1,0 +1,10 @@
+<body>
+  <div id="top-list" *ngIf="cryptos">
+    <h2 id="mercado">MERCADO DE CRIPTOMONEDAS EN VIVO</h2>
+      <div id="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
+        <span class="left">{{ crypto }}</span>
+        <span class="right">{{ cryptos[crypto].EUR | currency:'EUR':true }}</span>
+      </div>
+  </div>
+</body>
+
