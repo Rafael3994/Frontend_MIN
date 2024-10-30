@@ -45,7 +45,7 @@ Para poder utilizar el proyecto necesitas el Frontend y el Backend. Para empezar
 
 ### Frontend
 
-[Repositorio Front](https://github.com/a18rafgarper/minFront)
+[Repositorio Front](https://github.com/Rafael3994/Frontend_MIN)
 Con el proyecto del frontend clonado, abres la carpeta de este, abres la terminal y escribes estos comandos:
 
 ```> npm install```   
@@ -54,7 +54,7 @@ Con el proyecto del frontend clonado, abres la carpeta de este, abres la termina
 
 ### Backend
 
-[Repositorio Back](https://github.com/a18rafgarper/minBack)
+[Repositorio Back](https://github.com/Rafael3994/Backend_MIN)
 Con el proyecto del backend clonado, abres la carpeta de este, abres la terminal y escribes estos comandos:
 
 ```> npm install```   
